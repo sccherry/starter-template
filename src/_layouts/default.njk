@@ -13,6 +13,16 @@
       </h1>
     </header>
 
+    <nav role="navigation">
+      <ul>
+        {% for page in collections.all | eleventyNavigation %}
+        <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
     <main rol="main">
       {{ content | safe }}
     </main>
