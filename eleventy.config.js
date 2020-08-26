@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const htmlMinifier = require('html-minifier');
 

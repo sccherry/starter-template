@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const postcssCsso = require('postcss-csso');
 const postcssImport = require('postcss-import');
 const postcssNormalize = require('postcss-normalize');
