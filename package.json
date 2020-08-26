@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sccherry/starter-template/issues"
   },
-  "homepage": "https://github.com/sccherry/starter-template#readme"
+  "homepage": "https://github.com/sccherry/starter-template#readme",
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  }
 }
