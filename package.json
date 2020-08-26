@@ -1,0 +1,19 @@
+{
+  "name": "starter-template",
+  "version": "1.0.0",
+  "description": "A starter template for building static sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sccherry/starter-template.git"
+  },
+  "author": "Steve Cherry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sccherry/starter-template/issues"
+  },
+  "homepage": "https://github.com/sccherry/starter-template#readme"
+}
