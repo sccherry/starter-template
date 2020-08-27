@@ -4,11 +4,9 @@
   "description": "A starter template for building static sites.",
   "main": "index.js",
   "scripts": {
-    "build:site": "eleventy --config eleventy.config.js",
-    "build:css": "postcss src/css -d dist/css",
-    "build": "ELEVENTY_ENV=production npm run build:site && NODE_ENV=production npm run build:css",
+    "build": "snowpack build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build:site -- --serve & npm run build:css -- --watch"
+    "start": "snowpack dev"
   },
   "repository": {
     "type": "git",
@@ -23,6 +21,12 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.6",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@snowpack/plugin-babel": "^2.1.0",
+    "@snowpack/plugin-dotenv": "^2.0.1",
+    "@snowpack/plugin-postcss": "^1.0.2",
+    "@snowpack/plugin-run-script": "^2.1.1",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -34,6 +38,7 @@
     "postcss-import": "^12.0.1",
     "postcss-normalize": "^9.0.0",
     "postcss-preset-env": "^6.7.0",
+    "snowpack": "^2.9.1",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
