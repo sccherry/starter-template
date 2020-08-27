@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+publish_mode: editorial_workflow
+media_folder: 'src/img/uploads'
+public_folder: '/img/uploads'
+collections:
+  - label: 'Pages'
+    name: 'pages'
+    folder: 'src'
+    create: true
+    slug: '{{ slug }}'
+    editor:
+      preview: false
+    fields:
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'default.njk',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
