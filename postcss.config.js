@@ -8,7 +8,7 @@ const tailwind = require('tailwindcss');
 module.exports = {
   plugins: [
     postcssImport,
-    postcssNormalize,
+    postcssNormalize(),
     tailwind,
     postcssPresetEnv,
     ...(process.env.NODE_ENV === 'production' ? [postcssCsso] : []),
