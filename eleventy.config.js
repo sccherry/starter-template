@@ -5,7 +5,8 @@ const htmlMinifier = require('html-minifier');
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addPassthroughCopy('./src/admin/config.yml');
+  eleventyConfig.addPassthroughCopy('./src/admin/*.{js,yml}');
+  eleventyConfig.addPassthroughCopy('./src/img');
 
   eleventyConfig.addTransform('html-minifier', (content, outputPath) => {
     if (

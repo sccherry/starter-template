@@ -6,17 +6,17 @@ public_folder: '/img/uploads'
 collections:
   - label: 'Pages'
     name: 'pages'
-    folder: 'src'
-    create: true
-    slug: '{{ slug }}'
-    editor:
-      preview: false
-    fields:
-      - {
-          label: 'Layout',
-          name: 'layout',
-          widget: 'hidden',
-          default: 'default.njk',
-        }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+    files:
+      - label: 'Home'
+        name: 'home'
+        file: 'src/index.md'
+        fields:
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'default.njk' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - label: 'Navigation'
+            name: 'eleventyNavigation'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: 'Key', name: 'key', type: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
