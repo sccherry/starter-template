@@ -1,5 +1,6 @@
 {
   "name": "starter-template",
+  "private": true,
   "version": "1.0.0",
   "description": "A starter template for building static sites.",
   "main": "index.js",
@@ -12,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/sccherry/starter-template.git"
   },
-  "author": "Steve Cherry",
+  "keywords": [
+    "eleventy"
+  ],
+  "author": "Steve Cherry <stevenccherry@gmail.com> (https://stevecherry.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sccherry/starter-template/issues"
